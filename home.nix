@@ -6,6 +6,7 @@
   imports = [
     ./starship.nix
     ./vscode.nix
+    ./git.nix
   ];
 
   home.packages = with pkgs; [
