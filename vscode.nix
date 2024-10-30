@@ -23,7 +23,7 @@
       # Font settings
       "editor.fontFamily" = "'FiraCode Nerd Font', 'Fira Code', Menlo, Monaco, 'Courier New', monospace";
       "editor.fontLigatures" = true;
-      "editor.fontSize" = 14;
+      "editor.fontSize" = 16;
       
       # Markdown settings specifically for Hugo
       "[markdown]" = {
@@ -64,9 +64,8 @@
 
       # Terminal settings
       "terminal.integrated.fontFamily" = "FiraCode Nerd Font";
-      "terminal.integrated.fontSize" = 12;
+      "terminal.integrated.fontSize" = 14;
       "terminal.integrated.defaultLocation" = "editor";  # Forces terminal into editor area
-      "terminal.integrated.showInTabs" = true;          # Ensures terminal appears in the editor tabs
       "terminal.integrated.defaultProfile.osx" = "fish";
       "terminal.integrated.profiles.osx" = {
         "fish" = {
