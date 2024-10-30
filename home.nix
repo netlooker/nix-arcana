@@ -12,10 +12,21 @@
   home.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
     catppuccin
+    mc
   ];
 
   programs = {
     # Terminal
+    direnv = {
+      enable = true;
+      config = {
+        global = {
+          hide_env_diff = true;  # This hides the verbose environment diff!
+        };
+      };
+      nix-direnv.enable = true;
+    };
+
     fish = {
       enable = true;
       interactiveShellInit = ''
