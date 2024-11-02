@@ -1,4 +1,5 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   home.username = "netlooker";
   home.homeDirectory = "/Users/netlooker";
   home.stateVersion = "24.05";
@@ -13,6 +14,7 @@
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
     catppuccin
     mc
+    pandoc
   ];
 
   programs = {
@@ -21,7 +23,7 @@
       enable = true;
       config = {
         global = {
-          hide_env_diff = true;  # This hides the verbose environment diff!
+          hide_env_diff = true; # This hides the verbose environment diff!
         };
       };
       nix-direnv.enable = true;
